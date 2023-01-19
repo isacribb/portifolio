@@ -1,0 +1,479 @@
+* {
+    padding-top: 0;
+    margin: 0;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(8, 8, 8, 0.2)), url(img/fundo.png);
+    background-size: cover;
+
+}
+
+.header {
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    border-radius: .75em;
+    padding: .7em;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.icone-nome {
+    font-size: 2em;
+    font: bold;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.navegacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.3em;
+    width: 50%;
+}
+
+.navegacao p{
+    cursor: pointer;
+    opacity: .9;
+}
+
+.navegacao p:hover{
+    color: rgb(0, 128, 255);
+    opacity: 1;
+    animation-delay: 2s;
+}
+
+.sobre {
+    display: flex;
+    width: 100%;
+    height: 89vh;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+.avatar {
+    width: 6.25em;
+    height: 6.25em;
+    padding: 1em;
+    border-radius: 50%;
+    
+}
+
+.imagem2 {
+    width: 20em;
+    height: 20em;
+    padding: 1.875em;
+    animation-name: animacao;
+    animation-iteration-count: infinite;
+    animation-duration: 3.5s;
+}
+
+.textoSobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30%;
+    text-align: center;
+    border-radius: 1.5625em;
+    padding: 1em;
+    font-size: .8em;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+.contatos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+    width: 55%;
+}
+
+.btn-contato {
+    color: white;
+    font-size: 1.8em;
+    background-color: rgb(3, 3, 196);
+    border-color: white;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: .3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    opacity: .8;
+}
+
+.contatos-2{
+    height: 3em;
+    display: flex;
+    align-items: center;
+}
+
+
+#btn-curriculo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    padding: .5em;
+}
+
+.btn-contato:hover {
+    opacity: 1;
+}
+
+
+/* TECNOGIAS */
+#tecnologias {
+    display: flex;
+    height: 35vw;
+    align-items: center;
+    justify-content: space-around;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+
+}
+
+.title-tec h2 {
+    font-size: 4em;
+    padding-bottom: .3em;
+}
+
+.title-tec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22em;
+    padding: 1em;
+    text-align: center;
+}
+
+.icons {
+    width: 30em;
+    height: 20em;
+    display: flex;
+    flex-direction: column;
+}
+
+.html,
+.css,
+.js,
+.reactjs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon-html,
+.icon-css,
+.icon-js,
+.icon-reactjs {
+    font-size: 6em;
+}
+
+.html-css {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.js-reactjs {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* PROJETOS*/
+
+#projects {
+    width: 100%;
+    height: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 32em;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%;
+    height: 80em;
+}
+
+.project-h2 {
+    font-size: 3em;
+    margin: 1em;
+}
+
+.project-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .4em;
+    border-radius: .9375em;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    padding-bottom: .8em;
+    width: 28em;
+    height: 20em;
+    margin-bottom: 2em;
+}
+
+.project-box:hover{
+    background: radial-gradient(rgba(255,255,255, 0.1), rgba(255,255,255, 0.07));
+}
+
+.project-box img {
+    width: 300px;
+    height: 180px;
+    border: .125em solid rgb(255, 255, 255);
+    opacity: .8;
+    margin: .4em 0;
+}
+.project-box img:hover{
+    opacity: 1;
+}
+
+.project-box a {
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.project-box p{
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+
+/* FOOTER */
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+#footer h2 {
+    padding: .5em;
+}
+
+#footer p {
+    padding: .5em;
+}
+
+
+/* ANIMATIONS */
+
+@keyframes animacao {
+    0% {
+        width: 20em;
+        height: 20em;
+    }
+    50% {
+        width: 18.125em;
+        height: 18.125em;
+        padding: 2.8125em;
+    }
+
+    100% {
+        width: 20em;
+        height: 20em;
+    }
+
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .4s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(0px, 0, 0);
+}
+
+[data-anime="rigth"]{
+    transform: translate3d(0px, 0, 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 455px ){
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+
+    body{
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), url(/img/fundo.png));
+        
+        background-attachment: fixed;
+        background-position:center;
+    }
+
+    #header{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navegacao{
+        display: none;
+    }
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vh;
+    }
+
+    .textoSobre{
+        max-width: 80%;
+    }
+
+    .imagem{
+        display: none;
+    }
+
+    #projects{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 7vh;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+        height: 45em;
+    }
+
+    .project-h2{
+        margin: 0;
+        margin-top: 1em;
+        padding-bottom: 1.3em;
+        margin-bottom: 1em;
+        font-size: 3em;
+    }
+
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-box img{
+        height: 5em;
+        width: 10em;
+    }
+
+    .project-box{
+        margin-bottom: 2em;
+        width: 80%;
+        height: 16em;
+    }
+
+        
+    .em-breve-h3{
+        max-width: 70%;
+        text-align: center;
+        margin-top: .2em;
+    }
+
+    .icons{
+        width: 20em;
+        font-size: .8em;
+    }
+
+    #tecnologias{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+        height: 70vh;
+    }
+
+    .title-tec h2{
+        font-size: 3.5em;
+    }
+
+
+    #footer{
+        display: flex;
+        align-items: center;        
+        flex-direction: column;
+        justify-content: end;
+        background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    }
+
+    #footer h2{
+        padding: 0;
+    }
+
+    #footer p{
+        padding: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
