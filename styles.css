@@ -171,7 +171,8 @@ body {
 .html,
 .css,
 .js,
-.reactjs {
+.reactjs,
+.nodejs {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +181,8 @@ body {
 .icon-html,
 .icon-css,
 .icon-js,
-.icon-reactjs {
+.icon-reactjs,
+.icon-nodejs {
     font-size: 6em;
 }
 
@@ -418,6 +420,10 @@ body {
         height: 70vh;
     }
 
+    .stars{
+        font-size: .7em;
+    }
+
     .title-tec h2{
         font-size: 3.5em;
     }
@@ -440,40 +446,3 @@ body {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
