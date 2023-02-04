@@ -116,7 +116,7 @@ body {
     background-image: var(--background-gradient-2);
     border-radius: 5px;
     padding: 0px 19px;
-    margin-top: 5px;
+    margin-top: 9px;
     box-shadow: var(--box-shadow-efect);
 }
 
@@ -393,6 +393,7 @@ body {
         flex-direction: column;
         align-items: center;
         padding-bottom: 5vh;
+        height: 70vh;
     }
 
     .textoSobre{
@@ -453,7 +454,7 @@ body {
         flex-direction: column-reverse;
         align-items: center;
         background: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
-        height: 70vh;
+        height: 50vh;
     }
 
     .stars{
@@ -471,7 +472,7 @@ body {
         flex-direction: column;
         justify-content: end;
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-        padding-top:30em;
+        padding-top: 45em;
     }
 
     #footer h2{
