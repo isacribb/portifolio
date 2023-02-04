@@ -1,3 +1,14 @@
+:root{
+    --background-gradient: linear-gradient(90deg,#021B79,#027ca5);
+    --background-gradient-2: linear-gradient(0deg, rgba(255,255,255, .06),rgba(255,255,255, .2));
+    --box-shadow-efect: 10px 10px 10px rgba(47, 47, 47, 0.9);
+    --hover-buttons:( transparent;
+        color: rgb(3, 3, 196);
+        transition: all .2s ease-in-out;
+    );
+    
+}
+
 * {
     padding-top: 0;
     margin: 0;
@@ -6,10 +17,8 @@
 }
 
 body {
-    background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(8, 8, 8, 0.2)), url(img/fundo.png);
-    background-size: cover;
-
+    background-image: linear-gradient(#076dd3,#0b35cf);
+    background-attachment: fixed;
 }
 
 .header {
@@ -17,7 +26,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .cabecalho {
@@ -25,9 +33,9 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 80%;
-    border-radius: .75em;
+    border-radius: .3em;
     padding: .7em;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: var(--background-gradient-2);
 }
 
 .icone-nome {
@@ -49,14 +57,18 @@ body {
 .navegacao p{
     cursor: pointer;
     opacity: .9;
+    background-color: rgb(145, 145, 145);
+    padding: 5px 14px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out
 }
 
 .navegacao p:hover{
-    color: rgb(0, 128, 255);
-    opacity: 1;
-    animation-delay: 2s;
+    background-color: var(--hover-buttons);
 }
 
+
+/* SOBRE MIM */
 .sobre {
     display: flex;
     width: 100%;
@@ -71,8 +83,7 @@ body {
     width: 6.25em;
     height: 6.25em;
     padding: 1em;
-    border-radius: 50%;
-    
+    border-radius: 50%;    
 }
 
 .imagem2 {
@@ -90,32 +101,35 @@ body {
     align-items: center;
     max-width: 30%;
     text-align: center;
-    border-radius: 1.5625em;
+    border-radius: .5625em;
     padding: 1em;
-    font-size: .8em;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    font-size: 1em;
 }
 
 .contatos{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 5em;
-    width: 55%;
+    width: 90%;
+    font-size: .7em;
+    background-image: var(--background-gradient-2);
+    border-radius: 5px;
+    padding: 0px 19px;
+    margin-top: 5px;
+    box-shadow: var(--box-shadow-efect);
 }
 
 .btn-contato {
-    color: white;
-    font-size: 1.8em;
-    background-color: rgb(3, 3, 196);
-    border-color: white;
+    font-size: 1.8em; 
+    background-color: rgb(145, 145, 145);
     cursor: pointer;
     text-decoration: none;
-    border-radius: .5em;
+    border-radius: .2em;
     padding: .3em;
     padding-left: 1em;
     padding-right: 1em;
-    opacity: .8;
+    transition: all .2s ease-in-out
 }
 
 .contatos-2{
@@ -126,14 +140,14 @@ body {
 
 
 #btn-curriculo{
-    color: white;
     text-transform: uppercase;
     font-size: 1.4em;
     padding: .5em;
 }
 
 .btn-contato:hover {
-    opacity: 1;
+    background-color: var(--hover-buttons);
+    transition: all .2s ease-in-out
 }
 
 
@@ -143,7 +157,7 @@ body {
     height: 35vw;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background: var(--background-gradient-2);
 
 }
 
@@ -203,20 +217,17 @@ body {
 
 #projects {
     width: 100%;
-    height: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 32em;
+    padding-bottom: 2em;
 }
 
 .projetos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     width: 90%;
-    height: 80em;
 }
 
 .project-h2 {
@@ -229,16 +240,13 @@ body {
     flex-direction: column;
     align-items: center;
     padding: .4em;
-    border-radius: .9375em;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    border-radius: .375em;
+    background: var(--background-gradient-2);
     padding-bottom: .8em;
     width: 28em;
-    height: 20em;
+    height: 21em;
     margin-bottom: 2em;
-}
-
-.project-box:hover{
-    background: radial-gradient(rgba(255,255,255, 0.1), rgba(255,255,255, 0.07));
+    box-shadow: var(--box-shadow-efect);
 }
 
 .project-box img {
@@ -247,14 +255,30 @@ body {
     border: .125em solid rgb(255, 255, 255);
     opacity: .8;
     margin: .4em 0;
+    transition: all .3s ease-in-out;
 }
 .project-box img:hover{
     opacity: 1;
+    transition: all .3s ease-in-out;
 }
 
 .project-box a {
     font-size: 1.5em;
     text-decoration: none;
+}
+
+
+#repositorio-github{
+    background-color: rgb(145, 145, 145);
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+#repositorio-github:hover{
+    background-color: var(--hover-buttons);
 }
 
 .project-box p{
@@ -263,7 +287,19 @@ body {
     flex-direction: row;
     width: 50%;
     justify-content: space-around;
+    padding-bottom: .2em;
 }
+
+#projeto-em-breve{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#projeto-em-breve h1{
+    font-size: 3em;
+}
+
 
 
 
@@ -273,7 +309,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+    background-image: linear-gradient(rgba(255,255,255, .0),rgba(255,255,255, .25)) ;
+    box-shadow: var(--box-shadow-efect);
 }
 
 #footer h2 {
@@ -384,7 +421,8 @@ body {
     }
 
     .projetos{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr;
         flex-direction: column;
         align-items: center;
     }
@@ -394,17 +432,15 @@ body {
         width: 10em;
     }
 
+    .project-box a{
+        font-size: 1.4em;
+        text-align: center;
+    }
+
     .project-box{
         margin-bottom: 2em;
         width: 80%;
         height: 16em;
-    }
-
-        
-    .em-breve-h3{
-        max-width: 70%;
-        text-align: center;
-        margin-top: .2em;
     }
 
     .icons{
@@ -435,6 +471,7 @@ body {
         flex-direction: column;
         justify-content: end;
         background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+        padding-top:30em;
     }
 
     #footer h2{
