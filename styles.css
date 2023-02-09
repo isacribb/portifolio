@@ -293,7 +293,7 @@ body {
 #projeto-em-breve{
     display: flex;
     text-align: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #projeto-em-breve h1{
